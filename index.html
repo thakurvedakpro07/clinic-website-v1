@@ -2,128 +2,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Clinic</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Clinic</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header class="navbar">
-  <div class="container nav-content">
-    
-    <div class="logo">
-      MediCare Clinic
+    <div class="container nav-content">
+      <div class="logo">MediCare Clinic</div>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#appointment">Appointment</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#appointment">Appointment</a></li>
-      </ul>
-    </nav>
-
-  </div>
- </header>
-
-    <!-- Hero Section -->
-    <section class="hero hero-gradient"> <div class="container hero-content"> <div class="hero-text"> <span class="hero-badge">Trusted Medical Care</span> <h1>Premium Healthcare for You and Your Family</h1> <p> Experience compassionate, expert-led medical care with modern facilities, personalized treatment, and same-day appointment support. </p>
+  <!-- Hero Section -->
+  <section class="hero hero-gradient">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">Trusted Medical Care</span>
+        <h1>Premium Healthcare for You and Your Family</h1>
+        <p>
+          Experience compassionate, expert-led medical care with modern
+          facilities, personalized treatment, and same-day appointment support.
+        </p>
 
         <div class="hero-stats">
-  <div><strong>10+</strong><span> Years Experience</span></div>
-  <div><strong>5k+</strong><span> Happy Patients</span></div>
-  <div><strong>24/7</strong><span> Support</span></div>
-</div>
-  <div class="hero-actions">
-    <a href="#appointment" class="btn">Book Appointment</a>
-    <a href="#services" class="btn btn-secondary">View Services</a>
-  </div>
-</div>
-
-<div class="hero-image">
-  <div class="doctor-image-placeholder">
-    <img src="images/PRO_DOC.png" alt="Doctor at the clinic" />
-  </div>
-</div>
-</div> </section>
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>🩺 General Consultation</h3>
-                    <p>Get expert advice and treatment for common health issues.</p>
-                </div>      
-                <div class="service-card">
-                    <h3>👶 Pediatric Care</h3>
-                    <p>Comprehensive healthcare for your little ones.</p>
-                </div>  
-                <div class="service-card">
-                    <h3>🏥 Specialist Referrals</h3>
-                    <p>Access to a network of specialists for advanced care.</p>
-                </div>
-            </div>
+          <div>
+            <strong>10+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div>
+            <strong>5k+</strong>
+            <span>Happy Patients</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Support</span>
+          </div>
         </div>
-    </section>
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>What Our Patients Say</h2>
-            <div class="cards-grid">
-                <div class="testimonial-card">  
-                    <div class="stars">★★★★★</div>
-                    <p>"The doctors are very caring and professional. I had a great experience!"</p>
-                    <h4>- John Doe</h4>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"I highly recommend this clinic for anyone looking for quality healthcare."</p>
-                    <h4>- Jane Smith</h4>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"The staff is friendly and the service is excellent. I felt very comfortable."</p>
-                    <h4>- Emily Johnson</h4>
-                </div>
-            </div>
-        </div>  
-    </section>
-    <!-- Contact Section -->
-    <section class="contact" id="appointment">
-        <div class="container">
-            <h2>Contact Us</h2>
-        <div class="contact-info">
-  <p><strong>Phone:</strong> +91 9876543210</p>
-  <p><strong>Email:</strong> medicareclinic@gmail.com</p>
-  <p><strong>Location:</strong> Pune, India</p>
-  <p><strong>Timings:</strong> Mon - Sat | 9AM - 8PM</p>
-</div>    
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="tel" name="phone" placeholder="Your Phone Number" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-            <a href="https://wa.me/919876543210?text=Hello%20MediCare%20Clinic,%0A%0AI%20would%20like%20to%20book%20an%20appointment.%0A%0AName:%20%0APhone:%20%0APreferred%20Date:%20%0AProblem:%20" class="whatsapp-btn" target="_blank">Book via WhatsApp</a>
-        </div>
-    </section>
 
-<a 
-  href="https://wa.me/919876543210?text=Hello%20MediCare%20Clinic,%0A%0AI%20would%20like%20to%20book%20an%20appointment.%0A%0AName:%20%0APhone:%20%0APreferred%20Date:%20%0AProblem:%20" 
-  class="floating-whatsapp"
-  target="_blank"
+        <div class="hero-actions">
+          <a href="#appointment" class="btn">Book Appointment</a>
+          <a href="#services" class="btn btn-secondary">View Services</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/PRO_DOC.png" alt="Doctor at the clinic">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>🩺 General Consultation</h3>
+          <p>Get expert advice and treatment for common health issues.</p>
+        </div>
+        <div class="service-card">
+          <h3>👶 Pediatric Care</h3>
+          <p>Comprehensive healthcare for your little ones.</p>
+        </div>
+        <div class="service-card">
+          <h3>🏥 Specialist Referrals</h3>
+          <p>Access to a network of specialists for advanced care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Patients Say</h2>
+
+      <div class="cards-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The doctors are very caring and professional. I had a great experience!"</p>
+          <h4>- John Doe</h4>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"I highly recommend this clinic for anyone looking for quality healthcare."</p>
+          <h4>- Jane Smith</h4>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The staff is friendly and the service is excellent. I felt very comfortable."</p>
+          <h4>- Emily Johnson</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="appointment">
+    <div class="container">
+      <h2>Contact Us</h2>
+
+      <div class="contact-info">
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Email:</strong> medicareclinic@gmail.com</p>
+        <p><strong>Location:</strong> Pune, India</p>
+        <p><strong>Timings:</strong> Mon - Sat | 9AM - 8PM</p>
+      </div>
+
+      <form class="appointment-form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+
+        <input 
+        type="date" 
+        id="appointment-date" 
+        name="appointment-date" 
+        required>
+
+       <input 
+       type="time" 
+       id="appointment-time" 
+       name="appointment-time" 
+       required
 >
-  WhatsApp
-</a>
+        <textarea id="message" name="message" placeholder="Describe Your Problem"></textarea>
 
-<footer class="footer">
-  <div class="container">
-    <p>© 2026 MediCare Clinic. All Rights Reserved.</p>
-  </div>
-</footer>
+        <button type="submit" class="btn">Book on WhatsApp</button>
+      </form>
 
+      <a
+        href="https://wa.me/917972569072?text=Hello%20MediCare%20Clinic,%0A%0AI%20would%20like%20to%20book%20an%20appointment.%0A%0AName:%20%0APhone:%20%0APreferred%20Date:%20%0AProblem:%20"
+        class="whatsapp-btn"
+        target="_blank"
+        rel="noopener"
+      >
+        Book via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <a
+    href="https://wa.me/917972569072?text=Hello%20MediCare%20Clinic,%0A%0AI%20would%20like%20to%20book%20an%20appointment.%0A%0AName:%20%0APhone:%20%0APreferred%20Date:%20%0AProblem:%20"
+    class="floating-whatsapp"
+    target="_blank"
+    rel="noopener"
+  >
+    WhatsApp
+  </a>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 MediCare Clinic. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-</html>     
+</html>
