@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doctor Clinic</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>MediCare Clinic - Family Healthcare Clinic in Pune</title>
+  <meta
+    name="description"
+    content="MediCare Clinic in Pune offers general consultations, pediatric care, specialist referrals, and convenient WhatsApp appointment booking for families."
+  >
+  <link rel="stylesheet" href="styles.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -24,11 +28,11 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero hero-gradient">
+  <section class="hero hero-gradient" aria-labelledby="site-title">
     <div class="container hero-content">
       <div class="hero-text">
         <span class="hero-badge">Trusted Medical Care</span>
-        <h1>Premium Healthcare for You and Your Family</h1>
+        <h1 id="site-title">MediCare Clinic - Premium Healthcare for You and Your Family</h1>
         <p>
           Experience compassionate, expert-led medical care with modern
           facilities, personalized treatment, and same-day appointment support.
@@ -56,27 +60,63 @@
       </div>
 
       <div class="hero-image">
-        <img src="images/PRO_DOC.png" alt="Doctor at the clinic">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              images/PRO_DOC-480.webp 480w,
+              images/PRO_DOC-768.webp 768w,
+              images/PRO_DOC-1024.webp 1024w,
+              images/PRO_DOC-1536.webp 1536w
+            "
+            sizes="(max-width: 640px) calc(100vw - 24px), 500px"
+          >
+          <source
+            type="image/jpeg"
+            srcset="
+              images/PRO_DOC-480.jpg 480w,
+              images/PRO_DOC-768.jpg 768w,
+              images/PRO_DOC-1024.jpg 1024w,
+              images/PRO_DOC-1536.jpg 1536w
+            "
+            sizes="(max-width: 640px) calc(100vw - 24px), 500px"
+          >
+          <img
+            src="images/PRO_DOC-768.jpg"
+            srcset="
+              images/PRO_DOC-480.jpg 480w,
+              images/PRO_DOC-768.jpg 768w,
+              images/PRO_DOC-1024.jpg 1024w,
+              images/PRO_DOC-1536.jpg 1536w
+            "
+            sizes="(max-width: 640px) calc(100vw - 24px), 500px"
+            width="1536"
+            height="1024"
+            alt="Doctor providing patient care at MediCare Clinic in Pune"
+            decoding="async"
+            fetchpriority="high"
+          >
+        </picture>
       </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section class="services" id="services">
+  <section class="services" id="services" aria-labelledby="services-heading">
     <div class="container">
-      <h2>Our Services</h2>
+      <h2 id="services-heading">Our Services</h2>
 
       <div class="services-grid">
         <div class="service-card">
-          <h3>🩺 General Consultation</h3>
+          <h3><span aria-hidden="true">🩺</span> General Consultation</h3>
           <p>Get expert advice and treatment for common health issues.</p>
         </div>
         <div class="service-card">
-          <h3>👶 Pediatric Care</h3>
+          <h3><span aria-hidden="true">👶</span> Pediatric Care</h3>
           <p>Comprehensive healthcare for your little ones.</p>
         </div>
         <div class="service-card">
-          <h3>🏥 Specialist Referrals</h3>
+          <h3><span aria-hidden="true">🏥</span> Specialist Referrals</h3>
           <p>Access to a network of specialists for advanced care.</p>
         </div>
       </div>
@@ -84,37 +124,37 @@
   </section>
 
   <!-- Testimonials Section -->
-  <section class="testimonials">
+  <section class="testimonials" aria-labelledby="testimonials-heading">
     <div class="container">
-      <h2>What Our Patients Say</h2>
+      <h2 id="testimonials-heading">What Our Patients Say</h2>
 
       <div class="cards-grid">
         <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
+          <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
           <p>"The doctors are very caring and professional. I had a great experience!"</p>
-          <h4>- John Doe</h4>
+          <p class="testimonial-author">- John Doe</p>
         </div>
         <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
+          <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
           <p>"I highly recommend this clinic for anyone looking for quality healthcare."</p>
-          <h4>- Jane Smith</h4>
+          <p class="testimonial-author">- Jane Smith</p>
         </div>
         <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
+          <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
           <p>"The staff is friendly and the service is excellent. I felt very comfortable."</p>
-          <h4>- Emily Johnson</h4>
+          <p class="testimonial-author">- Emily Johnson</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-<section class="contact" id="appointment">
+<section class="contact" id="appointment" aria-labelledby="contact-heading">
   <div class="container">
-    <h2>Contact Us</h2>
+    <h2 id="contact-heading">Contact Us</h2>
 
     <div class="appointment-intro">
-      <h3>Book Your Appointment</h3>
+      <h3 id="appointment-form-heading">Book Your Appointment</h3>
       <p>
         Select your preferred appointment date and time. Our clinic team will
         contact you to confirm your visit, and sharing these details helps us
@@ -123,21 +163,21 @@
     </div>
 
     <div class="contact-info">
-      <p><strong>Phone:</strong> +91 9876543210</p>
-      <p><strong>Email:</strong> medicareclinic@gmail.com</p>
+      <p><strong>Phone:</strong> <a href="tel:+917972569072">+91 7972569072</a></p>
+      <p><strong>Email:</strong> <a href="mailto:medicareclinic@gmail.com">medicareclinic@gmail.com</a></p>
       <p><strong>Location:</strong> Pune, India</p>
       <p><strong>Timings:</strong> Mon - Sat | 9AM - 8PM</p>
     </div>
 
-    <form class="appointment-form">
+    <form class="appointment-form" aria-labelledby="appointment-form-heading">
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name" required>
       </div>
 
       <div class="form-group">
         <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" required>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" autocomplete="tel" required>
       </div>
 
       <div class="form-group">
@@ -181,7 +221,7 @@
     </form>
 
     <a
-      href="https://wa.me/917972569072?text=Hello%20MediCare%20Clinic,%0A%0AI%20would%20like%20to%20book%20an%20appointment.%0A%0AName:%20%0APhone:%20%0APreferred%20Date:%20%0AProblem:%20"
+      href="https://wa.me/919876543210?text=Hello%20MediCare%20Clinic,%0A%0AI%20would%20like%20to%20book%20an%20appointment.%0A%0AName:%20%0APhone:%20%0APreferred%20Date:%20%0AProblem:%20"
       class="whatsapp-btn"
       target="_blank"
       rel="noopener"
@@ -193,20 +233,25 @@
 
 
   <a
-    href="https://wa.me/917972569072?text=Hello%20MediCare%20Clinic,%0A%0AI%20would%20like%20to%20book%20an%20appointment.%0A%0AName:%20%0APhone:%20%0APreferred%20Date:%20%0AProblem:%20"
+    href="https://wa.me/919876543210?text=Hello%20MediCare%20Clinic,%0A%0AI%20would%20like%20to%20book%20an%20appointment.%0A%0AName:%20%0APhone:%20%0APreferred%20Date:%20%0AProblem:%20"
     class="floating-whatsapp"
     target="_blank"
     rel="noopener"
+    aria-label="Chat with MediCare Clinic on WhatsApp"
   >
     WhatsApp
   </a>
 
   <footer class="footer">
     <div class="container">
+      <div class="footer-contact">
+        <a href="tel:+919876543210">+91 9876543210</a>
+        <a href="mailto:medicareclinic@gmail.com">medicareclinic@gmail.com</a>
+      </div>
       <p>© 2026 MediCare Clinic. All Rights Reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.min.js"></script>
 </body>
 </html>

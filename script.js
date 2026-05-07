@@ -18,7 +18,7 @@ Phone: ${phone}
 Appointment Date: ${appointmentDate}
 Appointment Time: ${appointmentTime}
 Problem: ${message}
-
+`;
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   window.open(whatsappUrl, "_blank", "noopener");
